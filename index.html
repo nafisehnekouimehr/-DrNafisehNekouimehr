@@ -1,154 +1,190 @@
 <!DOCTYPE html>
+
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>دکتر نفیسه نکویی مهر</title>
+
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-    font-family:Tahoma,sans-serif;
-    background:#eef3f8;
-    color:#333;
-    line-height:1.9;
+font-family:Tahoma,sans-serif;
+background:#f4f7fb;
+color:#333;
+line-height:2;
 }
 
 header{
-    background:linear-gradient(135deg,#0b2545,#134074,#3a7ca5);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
+background:linear-gradient(135deg,#0d3b66,#1d5fa8);
+color:white;
+padding:80px 20px;
+text-align:center;
 }
 
 .profile{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    border:6px solid white;
-    object-fit:cover;
-    margin-bottom:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
+width:180px;
+height:180px;
+border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(0,0,0,.3);
 }
-<img src="photo.jpg" class="profile" alt="دکتر نفیسه نکویی مهر">
+
 header h1{
-    font-size:40px;
-    margin-bottom:10px;
+font-size:42px;
 }
 
 header p{
-    font-size:18px;
+font-size:18px;
+margin-top:10px;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+}
+
+nav a{
+text-decoration:none;
+color:#0d3b66;
+margin:0 15px;
+font-weight:bold;
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px;
+max-width:1100px;
+margin:auto;
+padding:25px;
 }
 
 .card{
-    background:white;
-    margin:25px 0;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:all .3s ease;
-}
-
-.card:hover{
-    transform:translateY(-6px);
+background:white;
+padding:30px;
+margin:25px 0;
+border-radius:20px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 h2{
-    color:#134074;
-    margin-bottom:15px;
-    padding-bottom:10px;
-    border-bottom:3px solid #3a7ca5;
+color:#0d3b66;
+margin-bottom:15px;
+border-right:5px solid #1d5fa8;
+padding-right:10px;
 }
 
 ul{
-    padding-right:25px;
-}
-
-li{
-    margin:10px 0;
+padding-right:25px;
 }
 
 footer{
-    background:#0b2545;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-
-a{
-    color:#134074;
-    text-decoration:none;
+background:#0d3b66;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
 }
 </style>
+
 </head>
 <body>
 
 <header>
-    <img src="photo.jpg" class="profile" alt="دکتر نفیسه نکویی مهر">
-    <h1>دکتر نفیسه نکویی مهر</h1>
-    <p>استادیار رشته حقوق عمومی</p>
-    <p>دانشگاه آزاد اسلامی واحد نجف‌آباد</p>
+
+<img src="photo.jpg" class="profile">
+
+<h1>دکتر نفیسه نکویی مهر</h1>
+
+<p>استادیار حقوق عمومی</p>
+
+<p>دانشگاه آزاد اسلامی واحد نجف‌آباد</p>
+
 </header>
+
+<nav>
+<a href="#about">معرفی</a>
+<a href="#research">پژوهش‌ها</a>
+<a href="#articles">مقالات</a>
+<a href="#contact">ارتباط</a>
+</nav>
 
 <div class="container">
 
-<div class="card">
-    <h2>معرفی</h2>
-    <p>
-        دکتر نفیسه نکویی مهر، استادیار رشته حقوق عمومی در دانشگاه آزاد اسلامی واحد نجف‌آباد هستند.
-        زمینه‌های آموزشی و پژوهشی ایشان در حوزه حقوق عمومی، حقوق اساسی،
-        نظام‌های حقوقی و مطالعات مرتبط با اداره عمومی و حاکمیت قانون است.
-    </p>
+<div class="card" id="about">
+<h2>معرفی</h2>
+
+<p>
+دکتر نفیسه نکویی مهر، استادیار حقوق عمومی دانشگاه آزاد اسلامی واحد نجف‌آباد هستند. حوزه‌های علمی و پژوهشی ایشان شامل حقوق عمومی، حقوق شهروندی، حقوق فضای مجازی، حقوق بشر، حقوق زنان و مطالعات حقوقی مبتنی بر آموزه‌های اسلامی است.
+</p>
+
 </div>
 
-<div class="card">
-    <h2>زمینه‌های پژوهشی</h2>
-    <ul>
-        <li>حقوق عمومی</li>
-        <li>حقوق اساسی</li>
-        <li>حقوق اداری</li>
-        <li>مطالعات حکمرانی و سیاست‌گذاری عمومی</li>
-    </ul>
+<div class="card" id="research">
+
+<h2>زمینه‌های پژوهشی</h2>
+
+<ul>
+<li>حقوق عمومی</li>
+<li>حقوق شهروندی</li>
+<li>حقوق فضای مجازی</li>
+<li>حقوق بشر</li>
+<li>حقوق زنان و خانواده</li>
+<li>حقوق اداری</li>
+<li>حقوق اساسی</li>
+</ul>
+
 </div>
 
-<div class="card">
-    <h2>سوابق آموزشی</h2>
-    <p>
-        تدریس دروس تخصصی حقوق عمومی در مقاطع دانشگاهی و مشارکت در فعالیت‌های
-        آموزشی و پژوهشی دانشگاه.
-    </p>
+<div class="card" id="articles">
+
+<h2>مقالات علمی</h2>
+
+<ul>
+
+<li>جامعه‌شناسی حقوق شهروند مجازی در وب تاریک (۱۴۰۱)</li>
+
+<li>حفظ حقوق شهروندی در فضای مجازی (۱۴۰۰)</li>
+
+<li>ابعاد حقوقی و قرآنی مبارزه با تروریسم مالی با محوریت حقوق بشر (۱۴۰۰)</li>
+
+<li>حق بر امنیت اجتماعی با تأکید بر آیات و روایات (۱۳۹۹)</li>
+
+<li>حق برخورداری از امنیت روانی با تأکید بر اندیشه‌های اسلامی عرفانی امام خمینی (ره) (۱۳۹۸)</li>
+
+<li>نقش دولت با محوریت اخلاق دینی در پیشگیری از نقض محرمانگی داده‌ها در فضای مجازی (۱۳۹۸)</li>
+
+<li>ابعاد حقوقی جرایم علیه عفت و اخلاق عمومی در فضای مجازی با محوریت قرآن (۱۳۹۷)</li>
+
+<li>واکاوی میزان و نقش باورهای مذهبی در حمایت از حقوق زنان با محوریت قانون حمایت از خانواده (۱۳۹۷)</li>
+
+</ul>
+
 </div>
 
-<div class="card">
-    <h2>مقالات و آثار علمی</h2>
-    <p>
-        فهرست مقالات، کتاب‌ها و طرح‌های پژوهشی در این بخش قرار می‌گیرد.
-    </p>
-</div>
+<div class="card" id="contact">
 
-<div class="card">
-    <h2>اطلاعات تماس</h2>
-    <p>دانشگاه آزاد اسلامی واحد نجف‌آباد</p>
-    <p>دانشکده فقه ومبانی حقوق</p>
-    <p>ایمیل دانشگاهی: nafas.nekouimehr@gmail.com</p>
+<h2>ارتباط</h2>
+
+<p>دانشگاه آزاد اسلامی واحد نجف‌آباد</p>
+
+<p>گروه حقوق</p>
+
+<p>ایمیل دانشگاهی</p>
+
 </div>
 
 </div>
 
 <footer>
-    © تمامی حقوق محفوظ است
+
+© وب‌سایت رسمی دکتر نفیسه نکویی مهر
+
 </footer>
 
 </body>
