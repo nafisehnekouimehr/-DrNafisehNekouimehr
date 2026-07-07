@@ -14,41 +14,17 @@
     padding:0;
     box-sizing:border-box;
 }
-<section id="exam-section" style="padding:80px;background:#07182f;color:white;text-align:center;">
+ <section id="exam-section" style="padding:80px;background:#07182f;color:white;text-align:center;">
 
 <h2>مجموعه آزمون‌ها</h2>
 
-<br>
-
-<button class="btn" onclick="showExamList()">
-📚 نمایش آزمون‌ها
-</button>
-
-<br><br>
-
-<div id="examList"></div>
-
-</section>
-    <script>
-
-function showExamList(){
-
-document.getElementById("examList").innerHTML = `
-
-<div style="margin-top:20px">
 <a href="javascript:void(0)" class="btn" onclick="showQuiz()">
 آزمون حقوق اساسی ۱
 </a>
 
-</div>
+</section>
 
-`;
-
-}
-
-</script>
-   <section id="quiz-section"
-style="display:none;padding:60px;background:#f8f8f8">
+<section id="quiz-section" style="display:none;padding:60px;background:#f8f8f8">
 
 <h2 style="text-align:center">
 آزمون حقوق اساسی ۱
@@ -59,11 +35,9 @@ style="display:none;padding:60px;background:#f8f8f8">
 <br>
 
 <div style="text-align:center">
-
 <button class="btn" onclick="showResult()">
 ثبت پاسخ‌ها و مشاهده کارنامه
 </button>
-
 </div>
 
 <br>
@@ -73,149 +47,33 @@ style="display:none;padding:60px;background:#f8f8f8">
 </section>
   <script>
 
-const questions=[
-
-{
-q:"اصل تفکیک قوا در کدام اصل قانون اساسی آمده است؟",
-a:["56","57","58","59"],
-correct:1
-},
-
-{
-q:"رهبر توسط چه نهادی انتخاب می‌شود؟",
-a:["مجلس","خبرگان","دولت","شورای نگهبان"],
-correct:1
-},
-
-{
-q:"تعداد اعضای شورای نگهبان چند نفر است؟",
-a:["10","12","14","16"],
-correct:1
-},
-
-{
-q:"مدت ریاست جمهوری چند سال است؟",
-a:["3","4","5","6"],
-correct:1
-},
-
-{
-q:"همه پرسی در کدام اصل آمده است؟",
-a:["59","57","90","99"],
-correct:0
-},
-
-{
-q:"رئیس قوه قضائیه توسط چه کسی منصوب می‌شود؟",
-a:["رئیس جمهور","رهبر","مجلس","وزیر دادگستری"],
-correct:1
-},
-
-{
-q:"تفسیر قانون اساسی با کدام نهاد است؟",
-a:["مجلس","دولت","شورای نگهبان","دیوان عالی"],
-correct:2
-},
-
-{
-q:"نظارت بر انتخابات بر عهده کدام نهاد است؟",
-a:["وزارت کشور","مجلس","شورای نگهبان","دولت"],
-correct:2
-},
-
-{
-q:"قانون اساسی چند قوه را پیش‌بینی کرده است؟",
-a:["2","3","4","5"],
-correct:1
-},
-
-{
-q:"اصل حاکمیت مردم در کدام اصل مطرح شده است؟",
-a:["56","57","58","59"],
-correct:0
-}
-
-];
-
 function showQuiz(){
-
 document.getElementById("quiz-section").style.display="block";
 
-let html="";
-
-questions.forEach((item,index)=>{
-
-html+=`
-<div style="margin-bottom:25px">
-
-<p><b>${index+1}- ${item.q}</b></p>
+document.getElementById("quiz").innerHTML=`
+<p><b>1- اصل تفکیک قوا در کدام اصل آمده است؟</b></p>
+<label><input type="radio" name="q1" value="0">56</label><br>
+<label><input type="radio" name="q1" value="1">57</label><br>
+<label><input type="radio" name="q1" value="2">58</label><br>
+<label><input type="radio" name="q1" value="3">59</label><br>
 `;
-
-item.a.forEach((option,i)=>{
-
-html+=`
-<label>
-<input type="radio" name="q${index}" value="${i}">
-${option}
-</label><br>
-`;
-
-});
-
-html+="</div>";
-
-});
-
-document.getElementById("quiz").innerHTML=html;
 
 document.getElementById("quiz-section")
 .scrollIntoView({behavior:"smooth"});
-
 }
 
 function showResult(){
 
 let score=0;
 
-questions.forEach((item,index)=>{
+let q1=document.querySelector('input[name="q1"]:checked');
 
-const answer=
-document.querySelector(
-'input[name="q'+index+'"]:checked'
-);
-
-if(answer &&
-parseInt(answer.value)===item.correct){
-
+if(q1 && q1.value=="1"){
 score++;
-
 }
 
-});
-
-let percent=
-Math.round(score/questions.length*100);
-
-document.getElementById("result").innerHTML=`
-
-<div style="
-background:white;
-padding:30px;
-border-radius:10px;
-text-align:center;
-">
-
-<h2>کارنامه آزمون</h2>
-
-<p>تعداد پاسخ صحیح: ${score}</p>
-
-<p>تعداد کل سوالات: ${questions.length}</p>
-
-<p>درصد: ${percent}%</p>
-
-</div>
-
-`;
+document.getElementById("result").innerHTML=
+"<h2>کارنامه شما</h2><p>نمره: "+score+" از 1</p>";
 
 }
 
