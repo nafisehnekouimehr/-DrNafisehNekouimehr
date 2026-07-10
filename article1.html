@@ -3,41 +3,56 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>مقالات علمی دکتر نفیسه نکویی مهر</title>
 
 <style>
 
 body{
-font-family:tahoma;
-background:#f4f6f9;
 margin:0;
-padding:0;
+font-family:tahoma;
+background:#f4f6fa;
 line-height:2;
 }
 
 .header{
-background:#07182f;
+background:linear-gradient(135deg,#07182f,#0d2d57);
 color:white;
+padding:50px 20px;
 text-align:center;
-padding:40px 20px;
+}
+
+.header h1{
+margin:0;
+font-size:38px;
+}
+
+.header p{
+font-size:18px;
+opacity:.9;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:30px;
 }
 
 .profile{
-max-width:1100px;
-margin:auto;
+background:white;
+border-radius:20px;
 padding:30px;
 display:flex;
 flex-wrap:wrap;
-gap:30px;
 align-items:center;
+gap:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .profile img{
 width:280px;
 border-radius:20px;
-box-shadow:0 0 20px rgba(0,0,0,.2);
 }
 
 .bio{
@@ -48,38 +63,68 @@ flex:1;
 color:#07182f;
 }
 
-.articles{
-max-width:1100px;
-margin:auto;
-padding:20px;
+.stats{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
 }
 
-.article-box{
+.stat{
+background:#07182f;
+color:white;
+padding:10px 20px;
+border-radius:10px;
+}
+
+.magiran{
+display:inline-block;
+background:#c89b3c;
+color:white;
+padding:14px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
+}
+
+.magiran:hover{
+background:#a57b22;
+}
+
+.section-title{
+margin-top:50px;
+color:#07182f;
+font-size:30px;
+text-align:center;
+}
+
+.article{
 background:white;
 padding:20px;
-margin-bottom:15px;
 border-radius:15px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+margin:15px 0;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.article:hover{
+transform:translateY(-3px);
 transition:.3s;
 }
 
-.article-box:hover{
-transform:translateY(-3px);
-}
-
-.article-box a{
+.article a{
 text-decoration:none;
+font-weight:bold;
 font-size:18px;
 color:#07182f;
-font-weight:bold;
 }
 
 .footer{
 background:#07182f;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:40px;
+padding:25px;
+margin-top:50px;
 }
 
 </style>
@@ -93,94 +138,102 @@ margin-top:40px;
 <p>دکتری حقوق عمومی | عضو هیئت علمی دانشگاه آزاد اسلامی</p>
 </div>
 
+<div class="container">
+
 <div class="profile">
 
 <img src="maghale.png" alt="دکتر نفیسه نکویی مهر">
 
 <div class="bio">
 
-<h2>درباره پژوهشگر</h2>
+<h2>رزومه پژوهشی</h2>
 
 <p>
-دکتر نفیسه نکویی مهر، دکتری حقوق عمومی و عضو هیئت علمی دانشگاه آزاد اسلامی، پژوهشگر حوزه حقوق عمومی، حقوق شهروندی، حقوق فضای مجازی و حقوق بشر است.
+پژوهشگر حوزه حقوق عمومی، حقوق شهروندی، حقوق فضای مجازی، حقوق بشر و مطالعات قرآنی.
 </p>
 
-<p>
-دارای ۱۰ مقاله علمی پژوهشی و چندین اثر علمی در حوزه حقوق عمومی، حقوق شهروندی و فضای مجازی.
-</p>
-
+<div class="stats">
+<div class="stat">10 مقاله علمی</div>
+<div class="stat">3 کتاب تخصصی</div>
+<div class="stat">حقوق عمومی</div>
+<div class="stat">حقوق فضای مجازی</div>
 </div>
 
+<a class="magiran"
+href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1"
+target="_blank">
+مشاهده تمامی مقالات در مگیران
+</a>
+
+</div>
 </div>
 
-<div class="articles">
+<h2 class="section-title">فهرست مقالات</h2>
 
-<h2>فهرست مقالات</h2>
-
-<div class="article-box">
-<a href="#" target="_blank">
-1- بررسی ماهیت اعتقادی و حقوقی مکتب فردگرایی یا اصالت فرد
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+1- جامعه شناسی حقوق شهروند مجازی در وب تاریک
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-2- نقش دولت با محوریت اخلاق دینی در پیشگیری از نقض محرمانگی داده‌ها در فضای مجازی
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+2- حفظ حقوق شهروندی در فضای مجازی
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-3- حق برخورداری از امنیت روانی با تأکید بر اندیشه‌های اسلامی ـ عرفانی امام خمینی(ره)
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+3- ابعاد حقوقی و قرآنی مبارزه با تروریسم مالی با محوریت حقوق بشر
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-4- ابعاد حقوقی جرایم علیه عفت و اخلاق عمومی در فضای مجازی با محوریت قرآن
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+4- حق بر امنیت اجتماعی با تاکید بر آیات و روایات
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-5- حفظ حقوق شهروندی در فضای مجازی
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+5- حق برخورداری از امنیت روانی با تاکید بر اندیشه های اسلامی عرفانی امام خمینی(ره)
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-6- واکاوی میزان و نقش باورهای مذهبی در حمایت از حقوق زنان با محوریت قانون حمایت از خانواده
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+6- نقش دولت با محوریت اخلاق دینی در پیشگیری از نقض محرمانگی داده ها در فضای مجازی
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-7- نقش دولت با محوریت قرآن در پیشگیری از جعل هویت رایانه‌ای در فضای مجازی
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+7- ابعاد حقوقی جرایم علیه عفت و اخلاق عمومی در فضای مجازی با محوریت قرآن
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-8- جامعه‌شناسی حقوق شهروند مجازی در وب تاریک
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+8- واکاوی میزان و نقش باورهای مذهبی در حمایت از حقوق زنان با محوریت قانون حمایت از خانواده
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-9- ابعاد حقوقی و قرآنی مبارزه با تروریسم مالی با محوریت حقوق بشر
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+9- نقش دولت با محوریت قرآن در پیشگیری از جعل هویت رایانه ای در فضای مجازی
 </a>
 </div>
 
-<div class="article-box">
-<a href="#" target="_blank">
-10- حق بر امنیت اجتماعی با تأکید بر آیات و روایات
+<div class="article">
+<a href="https://www.magiran.com/author/452764/%D9%86%D9%81%DB%8C%D8%B3%D9%87-%D9%86%DA%A9%D9%88%DB%8C%DB%8C-%D9%85%D9%87%D8%B1" target="_blank">
+10- بررسی ماهیت اعتقادی و حقوقی مکتب فردگرایی یا اصالت فرد
 </a>
 </div>
 
 </div>
 
 <div class="footer">
-© دکتر نفیسه نکویی مهر
+© دکتر نفیسه نکویی مهر | تمامی حقوق محفوظ است
 </div>
 
 </body>
